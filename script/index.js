@@ -2,12 +2,6 @@ $(function() {
   $("input").attr("required", "on");
 
   $("input").on("keyup", function(e) {
-    // validate email and other form fields here
-    var regEx = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-    if($("email").val() !=regEx){
-      
-      $("#error").html("<b class='text-danger'>Invalid email</b>");
-    }
     // validate password here
     pas = $('#password').val();
     var len = pas.length;
@@ -24,6 +18,13 @@ $(function() {
         // Prevent form submission
         $("#error").html("<b class='text-danger'>Passwords do not match</b>");
         e.preventDefault();
+    }
+    // validate email and other form fields here
+    var regEx = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    if($("#email").val() != regEx.pattern()){
+      
+      $("#error").html("<b class='text-danger'>Invalid email</b>");
+      e.preventDefault();
     }
     if ($("#tac").prop("checked")) {
       $("#myForm").submit();

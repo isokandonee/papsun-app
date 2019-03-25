@@ -10,7 +10,7 @@
 	    <a class="nav-link <?php if ($CURRENT_PAGE == "Contact") {?>active<?php }?>" href="contact.php">Contact</a>
 	  </li>
 		<li class="nav-item">
-	    <a class="nav-link" href="logout.php">Log out</a>
+	    <a class="nav-link <?php if ($CURRENT_PAGE == "Contact") {?>active<?php }?>" href="../controller/logout.php">Log out</a>
 	  </li>
 	</ul>
 </div>

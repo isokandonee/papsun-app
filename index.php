@@ -18,10 +18,8 @@
                     <div class="card-body">
                         <img src="http://www.ansonika.com/mavia/img/registration_bg.svg" style="width:30%">
                         <h2 class="py-3">Registration</h2>
-                        <p>Tation argumentum et usu, dicit viderer evertitur te has. Eu dictas concludaturque usu, facete detracto patrioque an per, lucilius pertinacia eu vel.
-
-</p>
-<a class="btn btn-success" href="login.php">Login</a>
+                        <p>Tation argumentum et usu, dicit viderer evertitur te has. Eu dictas concludaturque usu, facete detracto patrioque an per, lucilius pertinacia eu vel.</p>
+                        <a class="btn btn-success" href="login.php">Login</a>
                     </div>
                 </div>
             </div>
@@ -40,7 +38,7 @@
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-6">
-                          <input type="email" class="form-control" id="email" required pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" name="email" placeholder="Email" autocomplete="off"/>
+                          <input type="email" class="form-control" id="email" required  name="email" placeholder="Email" autocomplete="off"/>
                         </div>
                         <div class="form-group col-md-6">
                           <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone"/>
